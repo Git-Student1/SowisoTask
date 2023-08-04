@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Calulation Excercises
+        </title>
+    </head>
+    <body>
+        <h1>Calculation Excercises</h1>
+        <h2>Task Configuration</h2>
+        <div>
+            <label for="operatorsInTask">number of operators in task</label>
+            <input id="operatorsInTask" name = "operatorsInTask">    
+        </div>
+        <div>
+            <label for="lengthOfNumbers">usual length of numbers</label>
+            <input id="lengthOfNumbers" name = "lengthOfNumbers">    
+        </div>
+       <br>
+       <h2>Calculation Task</h2>
+       <div>minimal accuracy: two places after decimal point, but can be more accurate</div>
+       <button onclick=displayNewTask()> new task</button>
+        <input id="task" name="task"> <a>  =  </a> <input id="result" placeholder="result"></input>
+        <a id="response"></a>
+        <div>
+        </div>
+        <button onclick=validate()>validate</button>
+    </body>
+    <script src="Calulator.js"></script>
+    <script src="Validator.js"></script>
+    <script src="Controller.js"></script>
+    
+
+</html>
