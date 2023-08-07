@@ -32,7 +32,7 @@ function generateRandomTask(){
     randomTask+= getRandomNumber(maxLengthOfNumber);
     for(let i=0; i<numberofCalulationOperators; i++){
         //-0.01 so that it is nevre out of bounds even though the possibility is almost 0 
-        let operatorIndex= Math.floor(Math.random()*(operators.length-0.01));
+        let operatorIndex= Math.floor(Math.random()*(operators.length));
         randomTask+= operators[operatorIndex];
         randomTask+= getRandomNumber(maxLengthOfNumber);
     }
